@@ -1,0 +1,27 @@
+{
+  "AppSettings": {
+    "SiteTitle": "PostgresSample"
+  },
+  "Authentication": {
+    "MicrosoftAccount": {
+      "ClientId": "XXXXXXXXXXXXXXXXXX",
+      "ClientSecret": "XXXXXXXXXXXXXXXXXX"
+    },
+    "Facebook": {
+      "AppId": "XXXXXXXXXXX",
+      "AppSecret": "XXXXXXXXXXX"
+    },
+    "Google": {
+      "ClientId": "XXXXXXXXXXXXX",
+      "ClientSecret": "XXXXXXXXXXXXXX",
+      "AuthenticationScheme": "Google",
+      "SignInScheme": "Cookies",
+      "CallbackPath": "/signin-google"
+    }
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=127.0.0.1;Port=5432;Database=PostgresSample;User Id=postgresSample;Password=Sup3rS3cr3t!;"
+    }
+  }
+}

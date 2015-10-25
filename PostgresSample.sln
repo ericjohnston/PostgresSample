@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{43435262-0BBF-4BDC-8F4B-8AC5C0ADA59F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{418A4E80-DE2B-4F93-BD59-F74BD02758B5}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PostgresSample", "src\PostgresSample\PostgresSample.xproj", "{296DC5DF-94AB-40F5-81BE-E132023C5BA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{296DC5DF-94AB-40F5-81BE-E132023C5BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296DC5DF-94AB-40F5-81BE-E132023C5BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296DC5DF-94AB-40F5-81BE-E132023C5BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296DC5DF-94AB-40F5-81BE-E132023C5BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{296DC5DF-94AB-40F5-81BE-E132023C5BA7} = {43435262-0BBF-4BDC-8F4B-8AC5C0ADA59F}
+	EndGlobalSection
+EndGlobal
