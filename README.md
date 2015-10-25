@@ -1,5 +1,5 @@
 # PostgresSample
-Sample app using beta8 of Asp.Net 5 MVC6 WebAPI and EF7 beta8 with PostgreSql
+Sample app using beta8 of Asp.Net 5 MVC6 WebAPI (CoreCLR) and EF7 beta8 with PostgreSql
 
 This example started with the built in .Net 5 preview template for MVC6 / WebApi, using the built-in .Net authentication. I updated the nuget references to use beta8, switched out EF6 with the beta8 version of EF7 and switched out the MS SqlServer references with Npgsql.
 
