@@ -1,7 +1,7 @@
 # PostgresSample
-Sample app using beta8 of Asp.Net 5 MVC6 WebAPI (CoreCLR) and EF7 beta8 with PostgreSql on Windows or Linux
+Sample app using beta8 of <a href="https://github.com/aspnet/home">Asp.Net 5</a> MVC6 WebAPI (CoreCLR) and <a href="https://github.com/aspnet/EntityFramework">Entity Framework 7</a> beta8 with <a href="http://www.postgresql.org/">PostgreSQL</a> on Windows or Linux
 
-This example started with the built in .Net 5 preview template for MVC6 / WebApi, using the built-in .Net authentication. I updated the nuget references to use beta8, switched out EF6 with the beta8 version of EF7 and switched out the MS SqlServer references with Npgsql.
+This example started with the <a href="https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx">Visual Studio 2015</a> built in .Net 5 preview template for MVC6 / WebApi, using the built-in .Net authentication. I updated the nuget references to use beta8, switched out EF6 with the beta8 version of EF7 and switched out the MS SqlServer references with Npgsql.
 
 After that, I cleaned up all of the errors where there were namespace changes, etc. I also updated the authentication EF migration scripts to use PostgreSql types instead of nvarchar, bit and datetimeoffset.
 
