@@ -12,8 +12,8 @@ It does allow registering and authenticating via the built-in authentication pro
 I've tested this on <a href="https://www.digitalocean.com/?refcode=a0f4b1dbfd78">Digital Ocean</a> (non-referel link: https://digitalocean.com/) using the following setup:
 
 * VPS running Ubuntu 14.04 for the .Net code.
-        * I used <a href="http://nginx.org/en/">nginx</a> as a reverse proxy to the .Net MVC/WebApi running on port 5000 via Kestrel.
+  * I used <a href="http://nginx.org/en/">nginx</a> as a reverse proxy to the .Net MVC/WebApi running on port 5000 via Kestrel.
 * VPS running Ubuntu 14.04 for the <a href="http://www.postgresql.org/">PostgreSQL</a> database
-        * On the web side, I used the <a href="http://www.npgsql.org/">npgsql</a> Entity Framework libraries to connect.
+  * On the web side, I used the <a href="http://www.npgsql.org/">npgsql</a> Entity Framework libraries to connect.
 
 Note: You can run Postgres on the same VPS as your web app for tinkering, etc and avoid having to configure the setup to allow remote access from your web server.
