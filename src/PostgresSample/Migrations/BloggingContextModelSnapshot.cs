@@ -1,8 +1,5 @@
-using System;
 using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Infrastructure;
-using Microsoft.Data.Entity.Metadata;
-using Microsoft.Data.Entity.Migrations;
 using PostgresSample.Models;
 
 namespace PostgresSample.Migrations
@@ -13,7 +10,7 @@ namespace PostgresSample.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .Annotation("ProductVersion", "7.0.0-beta8-15964");
+                .Annotation("Npgsql:ValueGeneration", "Identity");
 
             modelBuilder.Entity("PostgresSample.Models.Blog", b =>
                 {
@@ -44,7 +41,8 @@ namespace PostgresSample.Migrations
                 {
                     b.HasOne("PostgresSample.Models.Blog")
                         .WithMany()
-                        .ForeignKey("BlogId");
+                        .ForeignKey("BlogId")
+                        .WillCascadeOnDelete(true);
                 });
         }
     }

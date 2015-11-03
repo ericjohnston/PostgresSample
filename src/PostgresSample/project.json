@@ -19,6 +19,7 @@
     "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-beta8",
     "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8",
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta7",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta8",
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta8",
     "Microsoft.AspNet.StaticFiles": "1.0.0-beta8",
     "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8",
@@ -32,6 +33,7 @@
   },
 
   "commands": {
+    "kestrel": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --config hosting.ini",
     "web": "Microsoft.AspNet.Hosting --config hosting.ini",
     "ef": "EntityFramework.Commands"
   },

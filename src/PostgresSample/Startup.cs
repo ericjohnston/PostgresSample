@@ -14,6 +14,8 @@ using PostgresSample.Models;
 using PostgresSample.Services;
 using Microsoft.Dnx.Runtime;
 using Microsoft.AspNet.Http;
+using Microsoft.Data.Entity.Internal;
+using System;
 
 namespace PostgresSample
 {
@@ -48,13 +50,23 @@ namespace PostgresSample
             // Add Entity Framework services to the services container.
             services.AddEntityFramework()
                 .AddNpgsql()
+                .AddDbContext<BloggingContext>(options =>
+                    options.UseNpgsql(Configuration["Data:DefaultConnection:ConnectionString"]));
+            services.AddEntityFramework()
+                .AddNpgsql()
                 .AddDbContext<ApplicationDbContext>(options =>
                     options.UseNpgsql(Configuration["Data:DefaultConnection:ConnectionString"]));
 
-            services.AddEntityFramework()
-                .AddNpgsql()
-                .AddDbContext<BloggingContext>(options =>
-                    options.UseNpgsql(Configuration["Data:DefaultConnection:ConnectionString"]));
+            // Force running migrations for both DbContext classes.
+            using (ApplicationDbContext ctx = DbContextActivator.CreateInstance<ApplicationDbContext>(services.BuildServiceProvider()))
+            {
+                ctx.Database.Migrate();
+            }
+
+            using (BloggingContext ctx = DbContextActivator.CreateInstance<BloggingContext>(services.BuildServiceProvider()))
+            {
+                ctx.Database.Migrate();
+            }
 
             // Add Identity services to the services container.
             services.AddIdentity<ApplicationUser, IdentityRole>()

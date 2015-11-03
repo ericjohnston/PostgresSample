@@ -17,6 +17,13 @@ namespace PostgresSample.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        private AppSettings appSettings;
+
+        public ApplicationDbContext(IOptions<AppSettings> Settings) : base()
+        {
+            appSettings = Settings.Value;
+        }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

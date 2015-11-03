@@ -14,7 +14,7 @@ namespace PostgresSample.Migrations
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .Annotation("ProductVersion", "7.0.0-beta8-15964");
+                .Annotation("Npgsql:ValueGeneration", "Identity");
 
             modelBuilder.Entity("PostgresSample.Models.Blog", b =>
                 {
