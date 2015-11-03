@@ -9,7 +9,7 @@ For testing, I added a very basic context with two entities (blog and post) with
 
 It does allow registering and authenticating via the built-in authentication provider and will return a list of blogs (with posts), a specific blog (with posts). It also allows adding a blog (with posts) and deleting a blog.
 
-I've tested this on <a href="https://www.digitalocean.com/features/linux-distribution/ubuntu/?refcode=a0f4b1dbfd78">Digital Ocean</a> (non-referel link: https://digitalocean.com/) using the following setup:
+I've tested this on <a href="https://www.digitalocean.com/features/linux-distribution/ubuntu/?refcode=a0f4b1dbfd78">Digital Ocean</a> (non-referal link: https://digitalocean.com/) using the following setup:
 
 * VPS running <a href="http://releases.ubuntu.com/14.04/">Ubuntu 14.04</a> for the .Net code.
   * I used <a href="http://nginx.org/en/">nginx</a> as a reverse proxy to the .Net MVC/WebApi running on port 5000 via <a href="https://github.com/aspnet/KestrelHttpServer">Kestrel</a>.
